@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,38 +18,61 @@
   </style>
 </head>
 <body>
+<div class="container">
+  <h1>Contact Us</h1>
 
-  Contact Us
+  <div class="names">
+    <div class="name-field">
+      <p>First Name <span class="required-star">*</span></p>
+      <input class="field wide-field" type="text">
+      <p class="requried-field">This field is required</p>
+    </div>
+    <div class="name-field">
+      <p>Last Name <span class="required-star">*</span></p>
+      <input class="field wide-field" type="text">
+      <p class="requried-field">This field is required</p>
+    </div>
+  </div>
 
-  First Name
-  This field is required
+<p>Email Address <span class="required-star">*</span></p>
+<input class="field wide-field" type="text">
 
-  Last Name
-  This field is required
+  <div class="query-section">
+    <p>Query Type<span class="required-star">*</span></p>
+    <div class="query-options">
+      <div class="custom-field wide-field">
+        <span class="circle"></span>
+        <span class="field-label">General Enquiry</span>
+      </div>
+      <div class="custom-field wide-field">
+        <span class="circle"></span>
+        <span class="field-label">Support Request</span>
+      </div>
+    </div>
+    <p class="query-type">Please select a query type</p>
+  </div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+  <div>
+    <p>Message<span class="required-star">*</span></p>
+    <input class="message-field" type="text">
+    <p class="requried-field">This field is required</p>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <label class="custom-checkbox-label">
+      <input type="checkbox" class="custom-checkbox" />
+      <span class="custom-square"></span>
+      <span>I consent to being contacted by the team<span class="required-star">*</span></span>
+    </label>
+    <p class="submit-form">To submit this form, please consent to being contacted</p>
 
-  Message
-  This field is required
+    <button class="submit-btn">Submit</button>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
+    <p class="message-sent">Message Sent!</p>
+    <p class="completed-form">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+</div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Mark Hording</a>.
   </div>
 </body>
 </html>
