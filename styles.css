@@ -163,10 +163,27 @@ body {
 
   .field {
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
     padding: 14px;
     border: 1px solid hsl(148, 38%, 43%);
     border-radius: 5px;
+  }
+
+  .names, .query-options {
+    display: block;
+    gap: 0;
+  }
+
+  .name-field, .custom-field {
+    flex: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .query-options .custom-field {
+    flex: none;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 
