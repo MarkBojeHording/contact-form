@@ -61,9 +61,17 @@ body {
   display: inline-block;
 }
 
-.query-type, .requried-field, .submit-form, .message-sent, .completed-form {
+.query-type, .required-field, .submit-form, .message-sent, .completed-form {
   display: none;
 }
+
+.required-field, .query-type {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
 
 .message-field {
   width: 99%;
@@ -108,6 +116,13 @@ body {
   border-radius: 10px;
   font-weight: 400px;
 }
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); }
 
 .custom-checkbox-label {
   display: flex;

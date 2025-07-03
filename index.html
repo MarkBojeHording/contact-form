@@ -11,11 +11,6 @@
 
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <div class="container">
@@ -25,17 +20,21 @@
     <div class="name-field">
       <p>First Name <span class="required-star">*</span></p>
       <input class="field wide-field" type="text">
-      <p class="requried-field">This field is required</p>
+      <p class="required-field">This field is required</p>
     </div>
     <div class="name-field">
-      <p>Last Name <span class="required-star">*</span></p>
+      <p>Last Name <span class="requried-star">*</span></p>
       <input class="field wide-field" type="text">
-      <p class="requried-field">This field is required</p>
+      <p class="required-field">This field is required</p>
     </div>
   </div>
 
-<p>Email Address <span class="required-star">*</span></p>
-<input class="field wide-field" type="text">
+  <div class="email-field">
+    <p>Email Address <span class="required-star">*</span></p>
+    <input class="field wide-field" type="text">
+    <p class="required-field">Please enter a valid e-mail address</p>
+  </div>
+
 
   <div class="query-section">
     <p>Query Type<span class="required-star">*</span></p>
@@ -55,7 +54,7 @@
   <div>
     <p>Message<span class="required-star">*</span></p>
     <input class="message-field" type="text">
-    <p class="requried-field">This field is required</p>
+    <p class="required-field">This field is required</p>
 
     <label class="custom-checkbox-label">
       <input type="checkbox" class="custom-checkbox" />
@@ -68,6 +67,7 @@
 
     <p class="message-sent">Message Sent!</p>
     <p class="completed-form">Thanks for completing the form. We'll be in touch soon!</p>
+    <p class="required-field">This field is required</p>
   </div>
 </div>
   <div class="attribution">
@@ -75,4 +75,5 @@
     Coded by <a href="#">Mark Hording</a>.
   </div>
 </body>
+<script src="script.js"></script>
 </html>
